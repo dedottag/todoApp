@@ -29,6 +29,14 @@ export default class NewTaskForm extends Component {
             placeholder="What needs to be done?"
             value={this.state.label}
           ></input>
+          <button
+            className="button"
+            onChange={(e) => {
+              this.onLabelChange(e);
+            }}
+          >
+            add
+          </button>
         </label>
       </form>
     );
